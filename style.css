@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header{
+    height: 160px;
+    background-color: #006f43;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+header nav{
+    margin-top: 0.5rem;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+.main-title{
+    color: white;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem 0;
+    flex-grow: 1;
+}
+
+h1{
+    color: white;
+}
+ h2{
+    color:#006f43
+}
+
+footer{
+    background-color: #006f43;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+    color: white;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    color: #006f43;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #006f43;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #004d2f;
+}
+.cta {
+    background-color: #e0f5eb;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+    color: #006f43;
+}
