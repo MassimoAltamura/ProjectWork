@@ -10,29 +10,37 @@ body{
 }
 
 header{
-    height: 160px;
+   
     background-color: #006f43;
     color: white;
-    padding: 0.5rem 0;
-    text-align: center;
+    padding: 0.5rem 0.5rem;
+    
+}
+.header-container{
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-items: center;
+    gap: 4rem;
+    padding: 0 2rem;
+
+}
+.navbar{
+    display: flex;
+    gap: 3.5rem;
 }
 
-header nav{
-    margin-top: 0.5rem;
-}
-header nav a{
+.navbar a{
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
     font-weight: bold;
+    font-size: 0.9rem;
 }
-
-header nav a:hover{
+.navbar a:hover{
     text-decoration: underline;
 }
-
+header h1{
+    font-size: 1.5rem;
+}
 .main-title{
     color: white;
 }
@@ -114,4 +122,48 @@ button:hover {
 .cta h2 {
     margin-bottom: 1rem;
     color: #006f43;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px calc(33% - 2rem);
+    width: 300px;
+    padding: 1rem;
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.card h3{
+    color: #006f43;
+    margin-bottom: 0.5rem;
+}
+
+.card p{
+    margin: 0.3rem 0;
+    color: #333;
+
+}
+
+.price{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #004d2f;
+    margin-top: auto;
 }
