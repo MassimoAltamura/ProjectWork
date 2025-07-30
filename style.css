@@ -187,3 +187,24 @@ button:hover {
         text-align: center;
         margin-top: 1rem;
 }
+
+
+
+.download-btn{
+    display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        background-color: #006f43;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+}
+.download-btn:hover {
+    background-color: #004d2f;
+}
+
+.download-btn i {
+    margin-right: 8px;
+}
