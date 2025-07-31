@@ -30,6 +30,15 @@ header{
     height: 48px;
     border-radius: 50%;
 }
+/**/
+.card-home{
+    background-color: white;
+    border-left: 5px solid #4caf50;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 /*stile della navabar che contiene i collegamenti alle varie pagine del sito*/
 .header-container{
     display: flex;
@@ -177,16 +186,16 @@ button {
 button:hover {
     background-color: #004d2f;
 }
-/*stile della sezione call to action dove ho dato un colore di sfondo chiaro , un padding e un margine superiore*/
-.cta {
+/*stile della sezione del link che porta ai report di sostenibilità dove ho dato un colore di sfondo chiaro , un padding e un margine superiore*/
+.link-report {
     background-color: #e0f5eb;
     padding: 2rem;
     text-align: center;
     margin-top: 2rem;
     border-radius: 8px;
 }
-/*stile del titolo principale nella sezione del call to action dove ho dato un colore verde scuro e un margine inferiore*/
-.cta h2 {
+/*stile del titolo principale nella sezione del link che porta ai report di sostenibilità dove ho dato un colore verde scuro e un margine inferiore*/
+.link-report h2 {
     margin-bottom: 1rem;
     color: #006f43;
 }
@@ -280,6 +289,10 @@ button:hover {
     .container,.sezione-report{
         padding: 0 1rem;
     }
+    .card-home{
+        padding: 16px;
+        font-size: 0.95rem;
+    }
 }
 /*stile della responsività con larghezza massima di 480px*/
 @media(max-width:480px){
@@ -301,5 +314,17 @@ button:hover {
     .footer-column a,
     .footer-bottom p {
         font-size: 0.8rem;
+    }
+    .card-home{
+        padding: 12px;
+        font-size: 0.9rem;
+        border-left-color: 3px;
+    }
+    section h2{
+        font-size: 1.2rem;
+    }
+    section li ,
+    section ul{
+        font-size: 0.9rem;
     }
 }
