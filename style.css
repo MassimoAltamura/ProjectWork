@@ -1,3 +1,4 @@
+/*Stile generale della pagina*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -8,7 +9,7 @@ body{
     background-color: #f4f4f4;
     color: #333;
 }
-
+/*stile dell'header che contiene il logo, il titolo e la navbar*/
 header{
    
     background-color: #006f43;
@@ -16,17 +17,20 @@ header{
     padding: 0.5rem 0.5rem;
     
 }
+/*stile dell'immagine di introduzione che si adatta alla larghezza del contenitore e ha un bordo arrotondato*/
 .immagine-intro{
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 2rem;
 }
+/*stile del logo che ha una larghezza e altezza fissa e un bordo arrotondato*/
 .logo{
     width: 48px;
     height: 48px;
     border-radius: 50%;
 }
+/*stile della navabar che contiene i collegamenti alle varie pagine del sito*/
 .header-container{
     display: flex;
     justify-content: flex-start;
@@ -35,26 +39,31 @@ header{
     padding: 0 2rem;
 
 }
+/* stile navbar con un definimento dello spazio e allineamento tra gli elementi*/
 .navbar{
     display: flex;
     gap: 3.5rem;
 }
-
+/*stile dei link della navbar ho dato un colore bianco agli elementi , la dimenzione del testo, ho eliminato la sottolineatura del testo e ho messo un grassetto al testo */
 .navbar a{
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
 }
+/*stile dei link della navbar al passaggio del mouse*/
 .navbar a:hover{
     text-decoration: underline;
 }
+/*stile del titolo principale nell'header*/
 header h1{
     font-size: 1.5rem;
 }
+/*stile del titolo principale nella sezione che ci ho dato un colore bianco*/
 .main-title{
     color: white;
 }
+/*stile del contenitore principale dove ho dato un padding , un margine automatico , una larghezza massima*/
 .container{
     width: 90%;
     max-width: 1000px;
@@ -62,20 +71,21 @@ header h1{
     padding: 1rem 0;
     flex-grow: 1;
 }
-
+/*stile del titolo principale nella sezione di colore bianco*/
 h1{
     color: white;
 }
+/*stile del titolo secondario nella sezione di colore verde*/
  h2{
     color:#006f43
 }
-
+/*stile del footer dove ho dato un colore verde , un padding e il colore delle scritte di colore bianco*/
 .footer{
     background-color: #006f43;
     padding: 40px 0 20px 0;
     color: white;
 }
-
+/*stile del contenitore del footer dove ho dato un padding , un margine automatico e una larghezza massima*/
 .footer-container{
     display: flex;
     flex-wrap: wrap;
@@ -84,15 +94,18 @@ h1{
     margin: 0 auto;
     padding: 0 30px;
 }
+/*Stile delle colonne del footer dove ho dato un padding , un margine automatico e una larghezza massima*/
 .footer-column {
     flex: 1 1 200px;
     margin-bottom: 20px;
 
 }
+/*stile dei titoli del footer */
 .footer-column h3,
 .footer-column h4{
     margin-bottom: 10px;
 }
+/*stile dei paragrafi, liste e elementi della lista nel footer */
 .footer-column p,
 .footer-column ul,
 .footer-column li {
@@ -100,6 +113,7 @@ h1{
    padding: 0;
    list-style: none;
 }
+/*stile dei link del footer*/
 .footer-column a{
     color: white;
     text-decoration: none;
@@ -107,9 +121,11 @@ h1{
     margin: 6px 0;
     transition: color 0.3s ease;
 }
+/*stile dei link del footer al passaggio del mouse*/
 .footer-column a:hover{
     color: #c8e6c9;
 }
+/*stile dei bottoni all'interno del footer dove ho dato una dimensione del testo , un allineamento centrale e un padding*/
 .footer-bottom{
     text-align: center;
     border-top: 1px solid #ffffff33;
@@ -117,26 +133,27 @@ h1{
     padding-top: 15px;
     font-size: 0.9rem;
 }
+/*stile delle sezioni  dove ho dato un margine inferiore*/
 section {
     margin-bottom: 3rem;
 }
-
+/*stile del titolo secondario nella sezione*/
 section h2 {
     color: #006f43;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-
+/*stile delle liste non ordinate*/
 ul {
     list-style-type: disc;
     padding-left: 1.5rem;
 }
-
+/*stile del modulo dove ho dato un massimo di larghezza e un margine superiore*/
 form {
     max-width: 600px;
     margin-top: 1rem;
 }
-
+/*stile degli input e textarea dove ho dato uno stile del bordo , un padding , un margine superiore , una larghezza */
 input,
 textarea {
     width: 100%;
@@ -146,7 +163,7 @@ textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
-
+/*stile dei bottoni dove ho dato un colore di sfondo verde , un colore del testo bianco , un padding e un bordo nullo*/
 button {
     background-color: #006f43;
     color: white;
@@ -156,10 +173,11 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
-
+/*stile dei bottoni al passaggio del mouse*/
 button:hover {
     background-color: #004d2f;
 }
+/*stile della sezione call to action dove ho dato un colore di sfondo chiaro , un padding e un margine superiore*/
 .cta {
     background-color: #e0f5eb;
     padding: 2rem;
@@ -167,18 +185,19 @@ button:hover {
     margin-top: 2rem;
     border-radius: 8px;
 }
-
+/*stile del titolo principale nella sezione del call to action dove ho dato un colore verde scuro e un margine inferiore*/
 .cta h2 {
     margin-bottom: 1rem;
     color: #006f43;
 }
+/*stile del contenitore delle carte dove ho dato un gap , un allineamento centrale*/
 .cards-container{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
 }
-
+/*stile dell carta dove ho dato un colore di sfondo bianco , un bordo arrotondato , un'ombra , un allineamento centrale*/
 .card{
     background-color: white;
     border-radius: 8px;
@@ -191,54 +210,36 @@ button:hover {
     align-items: center;
     text-align: center;
 }
-
+/*stile dell'immagine della carta dove ho dato uno stile del bordo , un margine superiore , una larghezza */
 .card img{
     max-width: 100%;
     height: auto;
     border-radius: 6px;
     margin-bottom: 1rem;
 }
-
+/*stile del titolo della carta dove ho dato un colore verde scuro e un margine inferiore*/
 .card h3{
     color: #006f43;
     margin-bottom: 0.5rem;
 }
-
+/*stile del paragrafo della carta dove ho dato un margine e un colore del testo*/
 .card p{
     margin: 0.3rem 0;
     color: #333;
 
 }
-
+/*stile al prezzo della carta dove ho dato un colore verde scuro, un margine superiore , una dimensione del testo e un peso del testo*/
 .price{
     font-weight: bold;
     font-size: 1.2rem;
     color: #004d2f;
     margin-top: auto;
 }
+/*stile della sezione report dove ho dato un padding a sinistra*/
 .sezione-report{
     padding-left: 2rem;
 }
-.sede-centrale h3{
- color: #006f43;
- margin: 0.5rem;
-}
-.sede-centrale{
-    background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px calc(33% - 2rem);
-        width: 300px;
-        padding: 1rem;
-        flex: 1 1 280px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 1rem;
-}
-
-
-
+/*stile del bottone di download dove ho dato un colore di sfondo verde , un colore del testo bianco , un padding e un bordo nullo*/
 .download-btn{
     display: inline-block;
         margin-top: 1rem;
@@ -250,41 +251,52 @@ button:hover {
         font-weight: bold;
         transition: background-color 0.3s;
 }
+/*stile del bottone di download al passaggio del mouse dove ho dato un colore di sfondo più scuro*/
 .download-btn:hover {
     background-color: #004d2f;
 }
-
+/*stile dell'icona del bottone di download dove ho dato un margine a destra*/
 .download-btn i {
     margin-right: 8px;
 }
+/*stile della responsività  con larghezza massima di 768px*/
 @media(max-width:768px){
+    /*disposizione a colonna per l'header, centratura del testo e spazio tra gli elementi*/
     .header-container{
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
+    /*stile del footer dove ho occupato il 100% della larghezza e il testo centrale*/
     .footer-column{
         flex-basis: 100%;
         text-align: center;
     }
+    /*stile delle carte circa metà dello spazio disponibile , con un piccolo margine*/
     .card{
         flex-basis: calc(50% - 1.5rem);
     }
+    /*stile del titolo principale nella sezione del report e il titolo dove ho dato una riduzione del padding laterale per adattare il contenuto allo schermo più piccolo*/
     .container,.sezione-report{
         padding: 0 1rem;
     }
 }
+/*stile della responsività con larghezza massima di 480px*/
 @media(max-width:480px){
+    /*stile del titolo principale dove ho ridotto la dimensione del testo*/
     header h1{
         font-size: 1.2rem;
     }
+    /*stile della navbar dove ho ridotto la dimensione del testo e del padding dei link */
     .navbar a{
         font-size: 0.9rem;
         padding: 0.5rem;
     }
+    /*stile delle card dove ho dato l'occupazione del 100% della larghezza */
     .card{
         flex-basis: 100%;
     }
+    /*stile del footer per ridurre la dimensione del testo */
     .footer-column p,
     .footer-column a,
     .footer-bottom p {
