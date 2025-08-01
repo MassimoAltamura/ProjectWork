@@ -3,87 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoBuild s.p.a - Innovazione per l'edilizia sostenibile</title><!--in questa riga ho inserito il titolo nella scheda browser-->
-    <link rel="stylesheet" href="style.css"><!--in questa riga ho collegato il file CSS per lo stile della pagina-->
+    <title>EcoBuild s.p.a - Innovazione per l'edilizia sostenibile</title><!--in questa riga ho definito il titolo della pagine e ho aggiunto un motto al suo fianco-->
+        <link rel="stylesheet" href="style.css"><!--in questa riga ho collegato lo stile della pagina attraverso un link che collega allo style.css-->
     
 </head>
 <body>
     <header>
         <div class="header-container">
             
-            <h1>EcoBuild S.p.a</h1><!--in questa sezione ho inserito il nome dell'azienda-->
-                <img src="img/logo.jpg" alt="" class="logo"><!--in questa sezione ho inserito il logo dell'azienda con una propria classe-->
-            <nav class="navbar"><!--in questa sezione ho creato la navbar di navigazione , i collegamenti alle varie pagine create-->
-                <a href="index.html">Home</a>
-                <a href="sostenibilità.html">Sostenibilità</a>
-                <a href="prodotti.html">Prodotti</a>
-                <a href="Contattaci.html">Contattaci</a>
+            <h1>EcoBuild S.p.a</h1><!--in questa riga ho creato il titolo dell'azienda con <h1> -->
+                <img src="img/logo.jpg" alt="" class="logo"><!--in questa riga ho inserito un immagine dell'azienda e una propria classe -->
+            <nav class="navbar"><!--in questa riga ho creato una barra di navigazione con una propria classe attraverso il tag <nav>-->
+                <a href="index.html">Home</a><!--in questa riga ho creato un link alla pagina principale con il tag <a>-->
+                <a href="sostenibilità.html">Sostenibilità</a><!--in questa riga ho creato un link alla pagina di sostenibilità con il tag <a>-->
+                <a href="prodotti.html">Prodotti</a><!--in questa riga ho creato un link alla pagina di prodotti con il tag <a>-->
+                <a href="Contattaci.html">Contattaci</a><!--in questa riga ho creato un link alla pagina di contatto con il tag <a>-->
             </nav>
             
         </div>
     </header>
-    <section class="sezione-report"><!--in questa sezione ho creato il form di contatto con i vari campi è sono: nome,cognome,telefono,email,città,cap,messaggio-->
-        <h2>Contattaci</h2>
-        <form>
-            <label for="nome">Nome :</label>
-            <input type="text" id="nome" name="nome" required><br><br>
+    <section class="sezione-report"><!--qui ho creato una sezione per contattare l'azienda-->
+        <h2>Contattaci</h2><!--qui ho creato un sottotitolo per la sezione di contatto attraverso un tag <h2>-->
+        <form><!--qui ho creato un modulo per inviare un messaggio all'azienda-->
+            <label for="nome">Nome :</label><!--qui ho creato un'etichetta per il campo nome attraverso un tag <label>-->
+            <input type="text" id="nome" name="nome" required><br><br><!--qui ho creato un campo di input per inserire il nome della persona che ci contatta-->
 
-            <label for="cognome">Cognome :</label>
-            <input type="text" id="cognome" name="cognome" required><br><br>
+            <label for="cognome">Cognome :</label><!--qui ho creato un'etichetta per il campo cognome attraverso un tag <label>-->
+            <input type="text" id="cognome" name="cognome" required><br><br><!--qui ho creato un campo di input per inserire il cognome della persona che ci contatta-->
 
-            <label for="Telefono">Telefono :</label>
-            <input type="tel" id="Telefono" name="Telefono" required><br><br>
+            <label for="Telefono">Telefono :</label><!--qui ho creato un'etichetta per il campo telefono attraverso un tag <label>-->
+            <input type="tel" id="Telefono" name="Telefono" required><br><br><!--qui ho creato un campo di input per inserire il numero di telefono della persona che ci contatta-->
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email :</label><!--qui ho creato un'etichetta per il campo email attraverso un tag <label>-->
+            <input type="email" id="email" name="email" required><br><br><!--qui ho creato un campo di input per inserire l'email della persona che ci contatta-->
 
-            <label for="citta">Città :</label>
-            <input type="text" id="citta" name="citta" required><br><br>
+            <label for="citta">Città :</label><!--qui ho creato un'etichetta per il campo città attraverso un tag <label>-->
+            <input type="text" id="citta" name="citta" required><br><br><!--qui ho creato un campo di input per inserire la città della persona che ci contatta-->
 
-            <label for="cap">CAP :</label>
-            <input type="text" id="cap" name="cap" required pattern="[0-9]{5}" title="inserisci un CAP valido"><br><br>
-            
-            <label for="messaggio">Messaggio :</label>
-            <textarea id="messaggio" name="messaggio" required></textarea><br><br>
+            <label for="cap">CAP :</label><!--qui ho creato un'etichetta per il campo CAP attraverso un tag <label>-->
+            <input type="text" id="cap" name="cap" required pattern="[0-9]{5}" title="inserisci un CAP valido"><br><br><!--qui ho creato un campo di input per inserire il CAP della persona che ci contatta-->
 
-            <button type="submit">Invia un messaggio</button>
+            <label for="messaggio">Messaggio :</label><!--qui ho creato un'etichetta per il campo messaggio attraverso un tag <label>-->
+            <textarea id="messaggio" name="messaggio" required></textarea><br><br><!--qui ho creato un campo di input per inserire il messaggio -->
+
+            <button type="submit">Invia un messaggio</button><!--in questa riga ho creato un pulsante per inviare il messaggio -->
         </form>
        
       
     </section>
 
-    <footer class="footer"><!--in questa sezione che è l'ultima ho creato il footer che ha varie informazioni come dove si trova l'azienda e le varie informazione sulla privacy-->
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>EcoBuild S.p.a</h3>
-                <img src="img/logo.jpg" alt="" class="logo">
-                <p>Costruire il futuro in modo sostenibile</p>
-                <p><strong>Sede legale:</strong> Via Santa Croce, 12 - 20123 Milano (MI)</p>
-                <p><strong>Email:</strong> info@ecobuild.it</p>
-                <p><strong>Telefono:</strong>+39 3420541376</p>
+    <footer class="footer"><!--in questa riga ho creato un footer per contenere le informazioni di contatto e i link utili-->
+        <div class="footer-container"><!--qui ho creato un contenitore per le colonne del footer per  organizzare meglio le informazioni-->
+            <div class="footer-column"><!--qui ho creato una prima colonna del footer-->
+                <h3>EcoBuild S.p.a</h3><!--in questa riga ho creato un sottotitolo per il nome dell'azienda attraverso un tag <h3>-->
+                <img src="img/logo.jpg" alt="" class="logo"><!--qui ho inserito il logo dell'azienda attraverso un tag <img> con classe "logo"-->
+                <p>Costruire il futuro in modo sostenibile</p><!--in questa riga ho descritto la missione dell'azienda-->
+                <p><strong>Sede legale:</strong> Via Santa Croce, 12 - 20123 Milano (MI)</p><!--qui ho fornito l'indirizzo della sede legale dell'azienda mettendo con il tag <strong> il nome della sezione in grassetto -->
+                <p><strong>Email:</strong> info@ecobuild.it</p><!--qui ho fornito l'indirizzo dell'azienda mettendo con il tag <strong> il nome della sezione in grassetto-->
+                <p><strong>Telefono:</strong>+39 3420541376</p><!--qui ho fornito il numero di telefono dell'azienda mettendo con il tag <strong> il nome della sezione in grassetto-->
             </div>
-            <div class="footer-column">
-                <h4>Link Utili</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sostenibilità.html">Sostenibilità</a></li>
-                    <li><a href="prodotti.html">Prodotti</a></li>
-                    <li><a href="contattaci.html">Contattaci</a></li>
+            <div class="footer-column"><!--in questa riga ho creato una seconda colonna del footer-->
+                <h4>Link Utili</h4><!--qui ho creato un sottotitolo per la sezione "Link Utili" attraverso un tag <h4>-->
+                <ul><!--qui ho creato un elenco non ordinato per i link delle pagine-->
+                    <li><a href="index.html">Home</a></li><!--in questa riga ho creato un link per collegare la pagina principale -->
+                    <li><a href="sostenibilità.html">Sostenibilità</a></li><!--in questa riga ho creato un link per collegare la pagina "Sostenibilità" -->
+                    <li><a href="prodotti.html">Prodotti</a></li><!--in questa riga ho creato un link per collegare la pagina "Prodotti" -->
+                    <li><a href="contattaci.html">Contattaci</a></li><!--in questa riga ho creato un link per collegare la pagina "Contattaci" -->
                 </ul>
             </div>
-            <div class="footer-column">
-                <h4>Legale</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Termini di Servizio</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Note Legali</a></li>
+            <div class="footer-column"><!--in questa riga ho creato una terza colonna del footer-->
+                <h4>Legale</h4><!--qui ho creato un sottotitolo per la sezione "Legale" attraverso un tag <h4>-->
+                <ul><!--qui ho creato un elenco non ordinato per i link delle pagine-->
+                    <li><a href="#">Privacy Policy</a></li><!--in questa riga ho creato un link per la pagina della privacy policy attraverso il tag <a>-->
+                    <li><a href="#">Termini di Servizio</a></li><!--in questa riga ho creato un link per la pagina dei termini di servizio attraverso il tag <a>-->
+                    <li><a href="#">Cookie Policy</a></li><!--in questa riga ho creato un link per la pagina della cookie policy attraverso il tag <a>-->
+                    <li><a href="#">Note Legali</a></li><!--in questa riga ho creato un link per la pagina delle note legali attraverso il tag <a>-->
                 </ul>
             </div>
         </div>
     
-        <div class="footer-bottom">
-            <p>&copy; 2020 EcoBuild S.p.a. Impresa di riservatezza, ogni diritto riservato.</p>
+        <div class="footer-bottom"><!--in questa riga ho creato la parte finale del footer-->
+            <p>&copy; 2020 EcoBuild S.p.a. Impresa di riservatezza, ogni diritto riservato.</p><!--qui ho fornito un avviso di copyright-->
         </div>
     </footer>
 </body>
