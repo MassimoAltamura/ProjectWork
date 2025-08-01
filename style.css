@@ -9,7 +9,7 @@ body{
     background-color: #f4f4f4;
     color: #333;
 }
-/*stile dell'header dove ho definito contiene il logo, il titolo e la navbar*/
+/*stile dell'header dove ho definito contiene un colore di sfondo , il colore del testo e il padding*/
 header{
    
     background-color: #006f43;
