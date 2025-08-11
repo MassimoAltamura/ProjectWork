@@ -244,7 +244,11 @@ button:hover {
     color: #333;
 
 }
-
+/*stile bottone download dove ho definito il margine e l'allineamento*/
+.card a.download-btn{
+    margin-top: auto;
+    align-self: center;
+}
 /*stile per il contenuto dei prodotti dove ho definito  il posizionamento delle card dei prodotti*/
 .cards-container-prodotti{
     display: flex;
