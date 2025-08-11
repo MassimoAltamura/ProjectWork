@@ -26,7 +26,7 @@ header{
 }
 /*stile per il logo dell'azienda dove ho definito le caratteristiche del logo come: larghezza, altezza e bordi*/
 .logo{
-    width: 48px;
+    width: 100px;
     height: 48px;
     border-radius: 50%;
 }
@@ -122,6 +122,11 @@ h1{
    padding: 0;
    list-style: none;
 }
+/*stile per colonna ul piedi pagina dove ho impostato gli elementi in fila */
+.footer-column ul{
+    display: flex;
+    gap: 20px;
+}
 /*stile per i link nelle colonne del piè di pagina attraverso la proprietà del colore, la decorazione del testo, il display e il margine*/
 .footer-column a{
     color: white;
@@ -199,25 +204,27 @@ button:hover {
     margin-bottom: 1rem;
     color: #006f43;
 }
-/*stile per il contenuto del report dove ho definito  il padding*/
+/*stile per il contenuto del report dove ho definito  il posizionamento delle card*/
 .cards-container{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+    justify-content: flex-start;
 }
 /*stile per le schede del report dove ho definito il colore di sfondo, il bordo, l'ombra e la larghezza e il posizionamento*/
 .card{
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
     width: 300px;
     padding: 1rem;
-    flex: 1 1 280px;
+    flex: 0 0 calc(33.33% - 1.5rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 /*stile per le immagini delle schede del report dove ho definito il massimo della larghezza, l'altezza automatica, il raggio del bordo e il margine*/
 .card img{
@@ -237,7 +244,45 @@ button:hover {
     color: #333;
 
 }
-/*stile per il prezzo delle schede del report dove ho definito il colore del testo, la dimensione del font e il margine*/
+
+/*stile per il contenuto dei prodotti dove ho definito  il posizionamento delle card dei prodotti*/
+.cards-container-prodotti{
+    display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+}
+/*stile per le immagini delle schede dei prodotti dove ho definito il massimo della larghezza, l'altezza automatica, il raggio del bordo e il margine*/
+.card-prodotti{
+    background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        padding: 1rem;
+        flex: 1 1 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
+/*stile per le immagini delle schede dei prodotti dove ho definito il massimo della larghezza, l'altezza automatica, il raggio del bordo e il margine*/
+.card-prodotti img{
+    max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+}
+/*stile per i titoli delle schede dei prodotti dove ho definito il colore del testo e il margine*/
+.card-prodotti h3{
+    color: #006f43;
+    margin-bottom: 0.5rem;
+}
+/*stile per i testi delle schede dei prodotti dove ho definito il colore del testo*/
+.card-prodotti p {
+    margin: 0.3rem 0;
+        color: #333;
+}
+/*stile per il prezzo delle schede dei prodotti dove ho definito il colore del testo, la dimensione del font e il margine*/
 .price{
     font-weight: bold;
     font-size: 1.2rem;
