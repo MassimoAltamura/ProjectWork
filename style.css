@@ -330,6 +330,12 @@ button:hover {
         flex-basis: 100%;
         text-align: center;
     }
+    /*stile per il piè di pagina  dove ho definito la lista non ordinata va messa in verticale*/
+    .footer-column ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
     /*stile delle carte del report dove ho definito il posizionamento*/
     .card{
         flex-basis: calc(50% - 1.5rem);
